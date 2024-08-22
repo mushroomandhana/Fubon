@@ -107,41 +107,41 @@ $(function () {
 
 
 //swiper
-$(function() {
-    const swiper = new Swiper('#swiper1', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
-      autoplay: {
-        delay: 1000,
-        disableOnInteraction: false,
-      },
-    });
-    const swiper2 = new Swiper('#swiper2', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
-      autoplay: {
-        delay: 1300,
-        disableOnInteraction: false,
-      },
-    });
-    const swiper3 = new Swiper('#swiper3', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
-      autoplay: {
-        delay: 1600,
-        disableOnInteraction: false,
-      },
-    });
-    const swiper4 = new Swiper('#swiper4', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
-      autoplay: {
-        delay: 1900,
-        disableOnInteraction: false,
-      },
-    });
-});
+// $(function() {
+//     const swiper = new Swiper('#swiper1', {
+//       // Optional parameters
+//       direction: 'horizontal',
+//       loop: true,
+//       autoplay: {
+//         delay: 1000,
+//         disableOnInteraction: false,
+//       },
+//     });
+//     const swiper2 = new Swiper('#swiper2', {
+//       // Optional parameters
+//       direction: 'horizontal',
+//       loop: true,
+//       autoplay: {
+//         delay: 1300,
+//         disableOnInteraction: false,
+//       },
+//     });
+//     const swiper3 = new Swiper('#swiper3', {
+//       // Optional parameters
+//       direction: 'horizontal',
+//       loop: true,
+//       autoplay: {
+//         delay: 1600,
+//         disableOnInteraction: false,
+//       },
+//     });
+//     const swiper4 = new Swiper('#swiper4', {
+//       // Optional parameters
+//       direction: 'horizontal',
+//       loop: true,
+//       autoplay: {
+//         delay: 1900,
+//         disableOnInteraction: false,
+//       },
+//     });
+// });
