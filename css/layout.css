@@ -249,7 +249,7 @@ body.menu-open .menu {
 
 body.menu-open .plus-btn .r1 {
 	transform: translateX(-50%) translateY(-50%) rotate(-45deg);
-	
+
 }
 
 body.menu-open .plus-btn .r2 {
@@ -266,7 +266,7 @@ body.menu-open .plus-btn .r2 {
 	width: 100%;
 	pointer-events: none;
 	top: 0;
-	
+
 }
 
 .menu {
@@ -615,23 +615,23 @@ body.menu-open .plus-btn .r2 {
 }
 
 section.section1 {
-    position: relative;
-    background: #11B7B5;
-    background-image: url(../images/sec1_bg.svg);
-    background-repeat: space;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: left;
-    width: 100%;
-    /* height: 1032px; */
-    height: calc(100vh);
-    overflow: hidden;
-    z-index: 0;
-    display: flex;
-    align-items: center;
-    background-position: top;
-    position: relative;
-    top: -35px;
+	position: relative;
+	background: #11B7B5;
+	background-image: url(../images/sec1_bg.svg);
+	background-repeat: space;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: left;
+	width: 100%;
+	/* height: 1032px; */
+	height: calc(100vh);
+	overflow: hidden;
+	z-index: 0;
+	display: flex;
+	align-items: center;
+	background-position: top;
+	position: relative;
+	top: -35px;
 }
 
 .section1 img {
@@ -1734,6 +1734,8 @@ app_btn_group a:hoevr {
 
 	section.section1 {
 		background-image: url(../images/sec1_bg_mobile.svg);
+		background-size: contain;
+		background-position: center;
 	}
 
 	.logos {
