@@ -29,7 +29,6 @@
   <script type="text/javascript" src="js/ajax1.10.0.min.js"></script>
   <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
   <script src="bootstrap/bootstreap_bootstrap_4.5.2_bootstrap.min.js"></script>
-  <!-- <script type="text/javascript" src="js/layout.js"></script> -->
 
   <!-- <script src="js/swiper-bundle.min.js"></script> -->
   <script src="js/jquery-3.4.1.min.js"></script>
@@ -47,7 +46,7 @@
         j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-MRTNL7');</script>
-  <!-- End Google Tag Manager -->
+  <!-- End Google Tag Manabtn_go_top.svger -->
 
   <!-- Meta Pixel Code -->
   <script>
@@ -89,7 +88,14 @@
   <!--wraper-->
 
   <div id="WRAPER">
-    <a href="#" class="goTop"><img src="images/btn_go_top.svg" /></a>
+    <a href="#" class="goTop"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle id="circle1" cx="20" cy="20" r="20" fill="black" />
+        <path id="arrow1"
+          d="M30.6136 23.6066L20.007 13L9.40039 23.6066L10.8146 25.0208L20.007 15.8284L29.1994 25.0208L30.6136 23.6066Z"
+          fill="white" />
+      </svg>
+    </a>
     <div id="HEADER"><!--header-->
       <div class="menu-container">
         <div class="menu-sliders">
@@ -143,10 +149,15 @@
 
     <!--hero_image -->
     <div class="hero_image">
-      <div class="hero_image_bg desktop"><img src="images/fubon_life_hero_img_bg.svg"
-          alt="富邦人壽的&emsp;Good&emsp;I.D.E.A&emsp;，&emsp;成就你的&emsp;Good&emsp;Job圖片" /></div>
-      <div class="hero_image_bg mobile" alt="富邦人壽的&emsp;Good&emsp;I.D.E.A&emsp;，&emsp;成就你的&emsp;Good&emsp;Job圖片"><img
-          src="images/merry_hero_img_bg_mobile.svg" />
+      <div class="hero_image_bg desktop">
+        <img class="fubon_life_logo_slogan" src="images/img_fubon_life_logo_slogan.svg">
+        <img class="hero_img" src="images/fubon_life_hero_img_bg.svg"
+          alt="富邦人壽的&emsp;Good&emsp;I.D.E.A&emsp;，&emsp;成就你的&emsp;Good&emsp;Job圖片" />
+      </div>
+      <div class="hero_image_bg mobile" alt="富邦人壽的&emsp;Good&emsp;I.D.E.A&emsp;，&emsp;成就你的&emsp;Good&emsp;Job圖片">
+        <img class="fubon_life_logo_slogan_mobile" src="images/img_fubon_life_logo_slogan_mobile.svg"
+          alt="富邦人壽的&emsp;Good&emsp;I.D.E.A&emsp;，&emsp;成就你的&emsp;Good&emsp;Job圖片">
+        <img class="hero_img_mobile" src="images/merry_hero_img_bg_mobile.svg" />
       </div>
     </div>
     <!--hero_image end-->
@@ -154,12 +165,15 @@
     <!--section1 富邦人壽實業介紹 -->
     <section class="section1 sec_table" id="sec1">
       <div class="sec_div text_area">
-        <img src="images/img_fubon_life_slogan.svg" alt="">
+        <img class="slogan" src="images/img_fubon_life_slogan.svg"
+          alt="公平待客，是富邦人壽的價值與實踐&emsp;I&emsp;D&emsp;E&emsp;A&emsp;共融&emsp;Inclusion&emsp;多元&emsp;Diversity&emsp;公平&emsp;Equity&emsp;行動&emsp;Action 圖片">
+        <img class="slogan_mobile" src="images/img_fubon_life_slogan_mobile.svg"
+          alt="公平待客，是富邦人壽的價值與實踐&emsp;I&emsp;D&emsp;E&emsp;A&emsp;共融&emsp;Inclusion&emsp;多元&emsp;Diversity&emsp;公平&emsp;Equity&emsp;行動&emsp;Action 圖片">
       </div>
     </section>
     <!--section1 富邦人壽實業介紹 end-->
 
-    <!--section2 富邦人壽人分享-->
+    <!--section2 富邦人壽業務員真心話分享-->
     <section id="sec2" class="section2 sec_table">
       <div class="section2_title">
         <p class="title_employee_voice">
@@ -204,7 +218,7 @@
         </div>
       </div>
     </section>
-    <!--section2 富邦人壽人分享 end-->
+    <!--section2 富邦人壽業務員真心話分享 end-->
 
     <!--section3 文章專區-->
     <section class="section3 sec_table" id="sec3">
@@ -280,15 +294,10 @@
             <a href="https://www.cheers.com.tw/article/article.action?id=5102647" target="_blank">READ MORE</a>
           </div>
         </div>
-
-
       </div>
-
     </section>
 
-
-
-
+    <div style="clear: both;"></div>
   </div>
   <!--footer-->
   <div id="FOOTER">
@@ -310,24 +319,6 @@
     });
   </script>
   <script>
-    // rwd menu
-    // $('.scroll_btn').click(function () {
-    //   $('#NAV').toggleClass('reveal');
-    //   $('#nav-icon3').toggleClass('open');
-    //   $('body').toggleClass('menu-open');
-    //   var ta_value = $(this).attr('data');
-    //   $('html,body').animate({ scrollTop: $(ta_value).offset().top }, 800);
-    // });
-
-    // $('.NAV_btn_wrap').on('click', function (e) {
-    //   e.stopPropagation();
-    //   $('#NAV').toggleClass('reveal');
-    //   $('#nav-icon3').toggleClass('open');
-    //   $('body').toggleClass('menu-open');
-    // });
-
-
-
     // rwd menu
     $('.scroll_btn').click(function () {
       $('#NAV').toggleClass('reveal');
