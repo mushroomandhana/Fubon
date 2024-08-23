@@ -211,12 +211,22 @@ body {
 	right: 24px;
 }
 
-.goTop:hover {
-	opacity: 0.8;
+#circle1 {
+	fill: #000;
+	transition: fill 0.3s;
 }
 
-.goTop img {
-	width: 100%;
+#arrow1 {
+	fill: #fff;
+	transition: fill 0.3s;
+}
+
+#circle1:hover {
+	fill: #fff;
+}
+
+#circle1:hover+#arrow1 {
+	fill: #000;
 }
 
 body {
@@ -225,7 +235,11 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-color: #11B7B5;
+
 }
+
+
+
 
 #WRAPER {
 	float: left;
@@ -288,8 +302,8 @@ body.menu-open .plus-btn .r2 {
 }
 
 .menu ul li {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 100;
+	/* font-family: 'Roboto', sans-serif; */
+	font-weight: 300;
 	font-size: 24px;
 	color: #11B7B5;
 	min-height: 45px;
@@ -464,17 +478,33 @@ body.menu-open .plus-btn .r2 {
 	margin: 0 auto;
 }
 
-.hero_image_bg.desktop img {
+.fubon_life_logo_slogan {
+	display: inline-block;
+	position: absolute;
+	width: 33.5%;
+	/* max-width: 643px; */
+	height: auto;
+	left: 120px;
+	top: 28%;
+}
+
+.fubon_life_logo_slogan_mobile {
+	display: none;
+}
+
+.hero_img {
 	display: block;
 	width: 100%;
 	height: auto;
 }
 
-.hero_image_bg.mobile img {
+.hero_img_mobile {
 	display: none;
 	width: 100%;
 	height: auto;
 }
+
+
 
 
 .menu ul li a.active,
@@ -489,9 +519,11 @@ body.menu-open .plus-btn .r2 {
 	display: none;
 	position: fixed;
 	width: 60px;
-	top: 23px;
+	height: 60px;
+	top: 3px;
 	right: 8px;
 	z-index: 4;
+	cursor: pointer;
 }
 
 
@@ -521,7 +553,7 @@ body.menu-open .plus-btn .r2 {
 
 #nav-icon3 {
 	width: 30px;
-	height: 45px;
+	height: 60px;
 	position: relative;
 	margin: 0px auto;
 	-webkit-transform: rotate(0deg);
@@ -540,7 +572,7 @@ body.menu-open .plus-btn .r2 {
 	position: absolute;
 	height: 2px;
 	width: 100%;
-	border-radius: 2px;
+	/* border-radius: 2px; */
 	opacity: 1;
 	left: 0;
 	-webkit-transform: rotate(0deg);
@@ -558,29 +590,29 @@ body.menu-open .plus-btn .r2 {
 }
 
 #nav-icon3 span:nth-child(1) {
-	top: 2px;
+	top: 19px;
 }
 
 #nav-icon3 span:nth-child(2),
 #nav-icon3 span:nth-child(3) {
-	top: 10px;
+	top: 29px;
 }
 
 #nav-icon3 span:nth-child(2) {
 	display: none;
-	top: 10px;
+	top: 29px;
 }
 
 #nav-icon3 span:nth-child(4) {
-	top: 19px;
+	top: 39px;
 }
 
 #nav-icon3.open span {
-	background: #000000;
+	background: #11B7B5;
 }
 
 #nav-icon3.open span:nth-child(1) {
-	top: 18px;
+	top: 28px;
 	width: 0%;
 	left: 50%;
 }
@@ -634,7 +666,7 @@ section.section1 {
 	top: -35px;
 }
 
-.section1 img {
+.section1 img.slogan {
 	width: 100%;
 	display: block;
 	height: auto;
@@ -643,6 +675,11 @@ section.section1 {
 	box-sizing: border-box;
 	margin: 0 auto;
 }
+
+.section1 img.slogan_mobile {
+	display: none;
+}
+
 
 .sec_div.desktop img {
 	display: block;
@@ -661,6 +698,7 @@ section.section1 {
 	margin: 0 auto;
 	position: relative;
 	vertical-align: middle;
+	padding: 0 40px;
 }
 
 .section1 h2 {
@@ -762,9 +800,9 @@ section.section1 {
 	position: absolute;
 	content: "";
 	left: -68px;
-	top: 56px;
+	top: 30px;
 	width: 168px;
-	height: 157px;
+	height: 168px;
 	border-radius: 50%;
 	background: #52C9C7;
 	z-index: -1;
@@ -959,7 +997,15 @@ section.section1 {
 	content: '';
 }
 
-
+@media screen and (max-width: 1560px) {
+	body {
+		background-image: url(../images/body_bg.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-color: #11B7B5;
+	}
+}
 
 @media screen and (max-width: 1400px) {
 	.section2 .ev_container .map .decor {
@@ -985,6 +1031,7 @@ section.section1 {
 	}
 }
 
+
 @media screen and (max-width: 767px) {
 
 	.desktop-menu {
@@ -994,7 +1041,14 @@ section.section1 {
 	.NAV_btn_wrap {
 		display: block;
 	}
-
+	body {
+		background-image: url(../images/body_bg.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-color: #11B7B5;
+		background-position: 70% 25%;
+	}
 	.section2 .ev_container .map .entry .image {
 		border-radius: 20px;
 	}
@@ -1087,7 +1141,7 @@ section.section1 {
 	display: inline-block;
 	position: relative;
 	width: 100%;
-	max-width: calc(100% - 380px);
+	max-width: calc(100% - 382px);
 	border-bottom: solid 2px #000000;
 	font-size: 24px;
 	text-align: right;
@@ -1419,13 +1473,6 @@ section.section1 {
 	/* background-color: #11B7B5; */
 }
 
-.footer_text {
-	display: inline-block;
-}
-
-.footer_text_mobile {
-	display: none;
-}
 
 #FOOTER p {
 	color: #000;
@@ -1492,12 +1539,18 @@ app_btn_group a:hoevr {
 
 
 @media screen and (max-width: 1440px) {
+
+
+	.section1 .sec_div.text_area {
+		top: -10%;
+	}
+
 	.section2 .title_employee_voice {
 		font-size: 60px;
 	}
 
 	.tip_employee_voice {
-		max-width: calc(100% - 380px);
+		max-width: calc(100% - 382px);
 
 	}
 
@@ -1534,14 +1587,6 @@ app_btn_group a:hoevr {
 }
 
 @media screen and (max-width: 1280px) {
-	body {
-		background-image: url(../images/body_bg.svg);
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-color: #11B7B5;
-		background-position: 50% 25%;
-	}
 
 	/* .hero_image {
 		margin-top: 66px;
@@ -1563,7 +1608,7 @@ app_btn_group a:hoevr {
 
 
 	.tip_employee_voice {
-		max-width: calc(100% - 236px);
+		max-width: calc(100% - 238px);
 		font-size: 24px;
 	}
 
@@ -1680,7 +1725,7 @@ app_btn_group a:hoevr {
 	}
 
 	.section1 .sec_div.text_area {
-		padding: 0 40px;
+		top: -20%;
 	}
 
 	.section2 {
@@ -1719,18 +1764,44 @@ app_btn_group a:hoevr {
 
 
 @media screen and (max-width: 768px) {
-	body {
-		background-image: url(../images/body_bg.svg);
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-color: #11B7B5;
-		background-position: 70% 25%;
-	}
 
-	.section1 img {
+	.fubon_life_logo_slogan {
 		display: none;
 	}
+
+
+	.fubon_life_logo_slogan_mobile {
+		display: inline-block;
+		position: absolute;
+		width: 80%;
+		height: auto;
+		top: 12%;
+		left: 10%;
+		transform: translateX(-25%);
+		text-align: center;
+	}
+
+	.section1 .sec_div.text_area {
+		top: -25%;
+	}
+
+
+	.section1 img.slogan {
+		display: none;
+	}
+
+	.section1 img.slogan_mobile {
+		display: block;
+		width: 80%;
+		display: block;
+		height: auto;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		margin: 0 auto;
+		position: relative;
+	}
+
 
 	section.section1 {
 		background-image: url(../images/sec1_bg_mobile.svg);
@@ -1750,7 +1821,7 @@ app_btn_group a:hoevr {
 		display: none;
 	}
 
-	.hero_image_bg.mobile img {
+	.hero_img_mobile {
 		display: block;
 		/* padding-top: 60px; */
 	}
@@ -1764,7 +1835,7 @@ app_btn_group a:hoevr {
 	}
 
 	section.section1 {
-		/* height: 75vh; */
+		height: 80vh;
 	}
 
 	.text_employee_voice {
@@ -1807,7 +1878,7 @@ app_btn_group a:hoevr {
 		display: block;
 		position: fixed;
 		width: 60px;
-		top: 18px;
+		top: 0;
 		z-index: 4;
 	}
 
@@ -1866,7 +1937,7 @@ app_btn_group a:hoevr {
 	}
 
 	.section1 .sec_div.text_area {
-		padding: 0 28px;
+		padding: 0 24px;
 	}
 
 	.section2 {
@@ -1879,7 +1950,7 @@ app_btn_group a:hoevr {
 	}
 
 	.tip_employee_voice {
-		max-width: calc(100% - 204px);
+		max-width: calc(100% - 206px);
 		font-size: 18px;
 		margin: 0 0 0 12px;
 	}
@@ -1940,13 +2011,6 @@ app_btn_group a:hoevr {
 		margin-top: 85px;
 	}
 
-	.footer_text {
-		display: none;
-	}
-
-	.footer_text_mobile {
-		display: inline-block;
-	}
 
 	#FOOTER p {
 		color: #000;
@@ -1956,6 +2020,10 @@ app_btn_group a:hoevr {
 }
 
 @media screen and (max-width:576px) {
+	.NAV_btn_wrap {
+		right: 0;
+	}
+
 	body {
 		background-image: url(../images/body_bg.svg);
 		background-size: contain;
@@ -1965,9 +2033,6 @@ app_btn_group a:hoevr {
 		background-position: 100% 25%;
 	}
 
-	.NAV_btn_wrap {
-		right: 0;
-	}
 
 	.logos {
 		margin-left: 16px;
@@ -1977,7 +2042,10 @@ app_btn_group a:hoevr {
 		height: 32px;
 	}
 
-	.section1 .sec_div.text_area,
+	.section1 img.slogan_mobile {
+		width: 100%;
+	}
+
 	.section2 .sec_div.text_area {
 		padding: 60px 30px 0;
 	}
@@ -2036,7 +2104,7 @@ app_btn_group a:hoevr {
 	}
 
 	.section2 {
-		padding: 0 15px 200px 15px;
+		padding: 0 15px 148px 15px;
 	}
 
 	.section2::before {
@@ -2061,14 +2129,14 @@ app_btn_group a:hoevr {
 	}
 
 	.tip_employee_voice {
-		max-width: calc(100% - 163px);
+		max-width: calc(100% - 165px);
 		font-size: 16px;
 	}
 
 	#sec2 .ev_container {
 		text-align: center;
 		position: relative;
-		top: 107px;
+		/* top: 107px; */
 	}
 
 	.section2_title {
@@ -2147,7 +2215,7 @@ app_btn_group a:hoevr {
 	}
 
 	.section3 .card-title {
-		padding: 80px 0 20px 0;
+		padding: 40px 0 20px 0;
 	}
 
 	.section3 p.podcast_text {
