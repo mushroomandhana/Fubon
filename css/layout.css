@@ -484,7 +484,7 @@ body.menu-open .plus-btn .r2 {
 	width: 33.5%;
 	/* max-width: 643px; */
 	height: auto;
-	left: 120px;
+	left: 232px;
 	top: 28%;
 }
 
@@ -997,6 +997,12 @@ section.section1 {
 	content: '';
 }
 
+@media screen and (max-width: 1640px) {
+	.fubon_life_logo_slogan {
+		left: 222px;
+	}
+}
+
 @media screen and (max-width: 1560px) {
 	body {
 		background-image: url(../images/body_bg.svg);
@@ -1005,9 +1011,17 @@ section.section1 {
 		background-attachment: fixed;
 		background-color: #11B7B5;
 	}
+	.fubon_life_logo_slogan {
+		left: 200px;
+	}
 }
 
 @media screen and (max-width: 1400px) {
+
+	.fubon_life_logo_slogan {
+		left: 168px;
+	}
+
 	.section2 .ev_container .map .decor {
 		width: 100%;
 		margin-left: -0%;
@@ -1015,19 +1029,32 @@ section.section1 {
 }
 
 @media screen and (max-width: 1200px) {
-
+	.fubon_life_logo_slogan {
+		left: 144px;
+	}
 	.section2 .ev_container .map .decor {
 		margin-bottom: 15px;
 	}
 }
 
 @media screen and (max-width: 1023px) {
+	.fubon_life_logo_slogan {
+		left: 120px;
+	}
+
 	.section2 .ev_container .map .entry .image {
 		border-radius: 30px;
 	}
 
 	.section2 .ev_container .map .entry .block {
 		border-radius: 30px;
+	}
+}
+
+
+@media screen and (max-width: 960px) {
+	.fubon_life_logo_slogan {
+		left: 100px;
 	}
 }
 
@@ -1041,6 +1068,7 @@ section.section1 {
 	.NAV_btn_wrap {
 		display: block;
 	}
+
 	body {
 		background-image: url(../images/body_bg.svg);
 		background-size: contain;
@@ -1049,6 +1077,7 @@ section.section1 {
 		background-color: #11B7B5;
 		background-position: 70% 25%;
 	}
+
 	.section2 .ev_container .map .entry .image {
 		border-radius: 20px;
 	}
